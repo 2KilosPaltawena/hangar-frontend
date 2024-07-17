@@ -3511,10 +3511,10 @@
   "resolved" "https://registry.npmjs.org/expo-file-system/-/expo-file-system-17.0.1.tgz"
   "version" "17.0.1"
 
-"expo-font@~12.0.8":
-  "integrity" "sha512-xK9kOEyD/vnREicM5yS2uVwzB83weu+UE6QwJRH2dhoQcdJiWGGKOj+blJ8GrtU+BqtyNijyWcwfBbYOJnf8eQ=="
-  "resolved" "https://registry.npmjs.org/expo-font/-/expo-font-12.0.8.tgz"
-  "version" "12.0.8"
+"expo-font@~12.0.9":
+  "integrity" "sha512-seTCyf0tbgkAnp3ZI9ZfK9QVtURQUgFnuj+GuJ5TSnN0XsOtVe1s2RxTvmMgkfuvfkzcjJ69gyRpsZS1cC8hjw=="
+  "resolved" "https://registry.npmjs.org/expo-font/-/expo-font-12.0.9.tgz"
+  "version" "12.0.9"
   dependencies:
     "fontfaceobserver" "^2.1.0"
 
@@ -3546,10 +3546,10 @@
   "resolved" "https://registry.npmjs.org/expo-status-bar/-/expo-status-bar-1.12.1.tgz"
   "version" "1.12.1"
 
-"expo@*", "expo@~51.0.20":
-  "integrity" "sha512-EmNZel6j7pU4YF1QcIcgpVdYsA1lASQcEw9PPSevjreNT6nlge2CNHB6mAphAKGz5PdgcWYBn/v4qQj1/FJuZQ=="
-  "resolved" "https://registry.npmjs.org/expo/-/expo-51.0.20.tgz"
-  "version" "51.0.20"
+"expo@*", "expo@~51.0.21":
+  "integrity" "sha512-tCKJUw4U4F15FecFPwJTFnAwHZMmUD1Wm7FX0Z/Oj3Jr14MOkom8Lnt2OkBK6BtM91lz33EF9OhgqReX6kchLA=="
+  "resolved" "https://registry.npmjs.org/expo/-/expo-51.0.21.tgz"
+  "version" "51.0.21"
   dependencies:
     "@babel/runtime" "^7.20.0"
     "@expo/cli" "0.18.25"
@@ -3560,7 +3560,7 @@
     "babel-preset-expo" "~11.0.12"
     "expo-asset" "~10.0.10"
     "expo-file-system" "~17.0.1"
-    "expo-font" "~12.0.8"
+    "expo-font" "~12.0.9"
     "expo-keep-awake" "~13.0.2"
     "expo-modules-autolinking" "1.11.1"
     "expo-modules-core" "1.12.19"
@@ -5837,7 +5837,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.3.1.tgz"
   "version" "18.3.1"
 
-"react-native-gesture-handler@^2.9.0", "react-native-gesture-handler@>= 1.0.0":
+"react-native-gesture-handler@^2.16.1", "react-native-gesture-handler@>= 1.0.0":
   "integrity" "sha512-pWfniN6NuVKUq40KACuD3NCMe+bWNQCpD3cmxL6aLSCTwPKYmf7l4Lp0/E/almpjvxhybJZtFLU0w4tmxnIKaA=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.17.1.tgz"
   "version" "2.17.1"
@@ -5861,12 +5861,12 @@
     "convert-source-map" "^2.0.0"
     "invariant" "^2.2.4"
 
-"react-native-safe-area-context@^4.5.0", "react-native-safe-area-context@>= 3.0.0":
+"react-native-safe-area-context@^4.10.1", "react-native-safe-area-context@>= 3.0.0":
   "integrity" "sha512-Jx1lovhvIdYygg0UsMCBUJN0Wvj9GlA5bbcBLzjZf93uJpNHzaiHC4hR280+sNVK1+/pMHEyEkXVHDZE5JWn0w=="
   "resolved" "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.10.8.tgz"
   "version" "4.10.8"
 
-"react-native-screens@^3.20.0", "react-native-screens@>= 3.0.0":
+"react-native-screens@^3.31.1", "react-native-screens@>= 3.0.0":
   "integrity" "sha512-wybqZAHX7v8ipOXhh90CqGLkBHw5JYqKNRBX7R/b0c2WQisTOgu0M0yGwBMM6LyXRBT+4k3NTGHdDbpJVpq0yQ=="
   "resolved" "https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.32.0.tgz"
   "version" "3.32.0"
