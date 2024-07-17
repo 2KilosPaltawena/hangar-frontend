@@ -1,19 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import axios from 'axios';
-import config from '../../../config';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import config from '../../../utils/config';
+import { CommonActions } from '@react-navigation/native';
+import { AuthContext } from '../../../context/authContext';
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { setUser } = useContext(AuthContext);
 
   const handleLogin = async () => {
     try {
       const response = await axios.post(`${config.API_URL}/api/login`, { email, password });
-      const { token } = response.data;
-      // Guarda el token en AsyncStorage o Context API
-      // Navega a la pantalla principal
-      navigation.navigate('Main');
+      const { token, user } = response.data;
+      await AsyncStorage.setItem('token', token); // Guarda el token
+      setUser(user);
+
+      // Restablece la pila de navegación y navega a Profile
+      navigation.dispatch(
+        CommonActions.reset({
+          index: 0,
+          routes: [
+            { name: 'Profile', params: { user } }
+          ],
+        })
+      );
     } catch (error) {
       console.error(error);
       alert('Error al iniciar sesión');
@@ -27,7 +40,8 @@ const LoginScreen = ({ navigation }) => {
         style={styles.input}
         placeholder="Email"
         value={email}
-        onChangeText={setEmail}
+        onChangeText={(text) => setEmail(text.toLowerCase())} // Convierte el texto a minúsculas
+        autoCapitalize="none" // No permite mayúsculas
       />
       <TextInput
         style={styles.input}
